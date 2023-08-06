@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <link rel="stylesheet" href="css/style.css"> --}}
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    {{!-- The above line of code is a shortcut created to reach the file "bootstrap.min.css" --}}
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Brainiacs</title> 
+</head>
+<body>
+
+    {{!-- <button class="btn btn-success">Okay</button> --}}
+    {{>navbar}}
+
+    {{!-- hero section start --}}
+    <div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <div class="row">
+               <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column">
+               <h1>WE WILL HELP YOU TO </h1>
+               <h1>GROW YOUR BUISNESS </h1>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo velit quos cum accusamus fugit voluptates veritatis fugiat esse cupiditate.</p>
+               <button class="btn-style btn-primary">Read More</button>
+               </div>
+               {{!-- right side --}}
+               <div class="col-md-6 col-12 hero-text order-md-0 order-1">
+               <figure>
+                <img src="images/image.jpg" style="height: 28rem;width: 38rem" alt="photo">
+               </figure>
+               </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {{!-- hero section ends --}}
+
+    {{!-- about us section start --}}
+    {{>about}}
+    {{!-- about us section ends --}}
+
+    {{!-- service section start --}}
+    {{>service}}
+    {{!-- service section ends --}}
+    
+    {{!-- maps section start --}}
+    {{>maps}}
+    {{!-- maps section end --}}
+
+    {{!-- contact section start --}}
+    {{>contact}}
+    {{!-- contact section end --}}
+
+    {{!-- to include "jquery.js" and "bootstrap.js"  --}}
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+
+</body>
+</html>
